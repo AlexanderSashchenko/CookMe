@@ -24,6 +24,12 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              },
+              {
+                "input": "./node_modules/font-awesome/css/font-awesome.min.css"
+              },
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cooking-ng-app"
+    }
+  },
+  "defaultProject": "cooking-ng-app",
+  "cli": {
+    "analytics": "8cd46ebd-0af0-4b17-a457-64db3f0b0be9"
+  }
 }
