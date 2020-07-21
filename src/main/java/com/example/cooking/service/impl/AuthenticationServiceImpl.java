@@ -33,16 +33,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         this.roleRepository = roleRepository;
     }
 
-    /*Using embedded authentication for now
-    @Override
-    public User login(String email, String password) throws AuthenticationException {
-        User user = userService.getByEmail(email);
-        if (user.getPassword().equals(passwordEncoder.encode(password))) {
-            return user;
-        }
-        throw new AuthenticationException("Incorrect login or password!");
-    }*/
-
     @Override
     public User register(String email, String password) {
         User user = new User();

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Registration</title>
+
+</head>
+
+<body>
+
+<div class="registration-card">
+  <h1>Register</h1><br>
+  <form (ngSubmit)="register()">
+    <label for="username">Username</label>
+    <input type="text"
+           id="username"
+           name="username"
+           placeholder="Username"
+           [(ngModel)] = "userRegistration.email">
+
+    <label for="password">Password</label>
+    <input type="password"
+           id="password"
+           name="pass"
+           placeholder="Password"
+           [(ngModel)]="userRegistration.password">
+
+    <label for="repeat-password">Repeat Password</label>
+    <input type="password"
+           id="repeat-password"
+           name="repeat-pass"
+           placeholder="Repeat Password"
+           [(ngModel)]="userRegistration.repeatPassword">
+
+    <input type="submit"
+           name="register"
+           class="registration registration-submit"
+           value="Register">
+  </form>
+
+  <div class="registration-help">
+    <a href="http://localhost:4200/login">Log-in</a> • <a href="#">Forgot Password</a>
+  </div>
+</div>
+
+</body>
+
+</html>
