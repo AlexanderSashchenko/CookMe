@@ -10,15 +10,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.MapsId;
 import javax.persistence.OneToOne;
-import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "profile")
 @Data
 public class Profile {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @OneToOne

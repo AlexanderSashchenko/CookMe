@@ -3,8 +3,8 @@ package com.example.cooking.model.dto.request;
 import lombok.Data;
 
 @Data
-public class UserRequestDto {
+public class UserAuthenticationDto {
+    private String username;
     private String password;
-    private String email;
 
 }

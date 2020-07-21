@@ -44,6 +44,6 @@ public class InitializationController {
         admin.setRoles(roles);
         userService.add(admin);
 
-        return "Users and roles are added";
+        return "{\"message\" : \"Users and roles are added\"}";
     }
 }
